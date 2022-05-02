@@ -6,7 +6,7 @@ app = Flask(__name__)
 def db_connection():
     conn = None
     try:
-        conn = sqlite3.connect("vache.sqlite")
+        conn = sqlite3.connect("vache.sqlite")  # tante de se connecter a la base de données
     except sqlite3.error as e:
         print(e)
     return conn
@@ -16,7 +16,7 @@ def db_connection():
 def home():
     conn = db_connection()
     cursor = conn.cursor()
-    cursor = conn.execute("SELECT nom FROM familles")
+   # cursor = conn.execute("SELECT nom FROM familles")  #defini une liste des noms de familles
     return render_template("index.html", famille = cursor )
 
 @app.route("/<name>")
