@@ -12,4 +12,3 @@ voici la structure du dossier:
 │   └── css/
 │       └── style.css
 └── MANIFEST.in
-
