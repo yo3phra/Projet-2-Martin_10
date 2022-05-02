@@ -9,7 +9,8 @@ voici la structure du dossier:
 ├── templates/
 │   ├── index.html 
 │   ├── graph.html
+│   ├── images/
 │   └── css/
 │       └── style.css
+├── schema.sqlite
 └── MANIFEST.in
-
